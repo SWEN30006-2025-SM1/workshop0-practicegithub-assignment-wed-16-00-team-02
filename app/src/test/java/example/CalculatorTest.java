@@ -25,4 +25,8 @@ public class CalculatorTest {
     public void testDivideBasic() {
         Assert.assertEquals(5, calculator.divide(10, 2), 0.5);
     }
+    @Test
+    public void testDivideByZeroBasic() {
+        Assert.assertEquals(0, calculator.divide(0, 2), 0.5);
+    }
 }
